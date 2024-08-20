@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="PT-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="estilo/style.css">
+    <title>habibes</title>
+</head>
+<body>
+    <header>
+        <h1>Sistema de Vendas</h1>
+
+        <a href="#">Início</a>
+        <a href="#">Produtos</a>
+        <a href="#">Contatos</a>
+    </header>
+
+    <main>
+        <form id="vendas-form">
+            <label for="nome">Nome:</label>
+            <input type="text" id="nome" required>
+           
+            <label for="cpf">CPF:</label>
+            <input type="text" id="cpf" required>
+           
+            <label for="tipo-cliente">Tipo de cliente:</label>
+            <select id="tipo-cliente" required>
+                <option value="comum">Comum</option>
+                <option value="vip">VIP</option>
+                <option value="estudante">Estudante</option>
+            </select><br><br>
+            
+            <label for="preco-total">Preço Total R$:</label>
+            <input type="number" nome="preco-total" id="preco-total" required>
+            
+            <button type="button" onclick="calcularDesconto()">Calcular Desconto</button>
+            <h2>Resultado:</h2>
+            <p id="result"></p>
+        </form>
+
+    </main>
+
+    <script src="sistVendasDescontos.js"></script>
+</body>
+</html>
