@@ -1,15 +1,15 @@
 function canFormPalindrome(str) {
 
     let charCount = {};
-    for(let char of str) {
-        charCount[char] = (charCount[char] || 0) + 1;
+    for (let char of str) {
+      charCount[char] = (charCount[char] || 0) + 1;
     }
 
-    oddCount = 0;
-    for(let count of Object.values(charCount)) {
-        if(count % 2 !== 0){
-            oddCount++;
-        }
+    let oddCount = 0;
+    for (let count of Object.values(charCount)) {
+      if (count % 2 !== 0) {
+        oddCount++;
+      }
     }
     return oddCount <= 1;
 }
